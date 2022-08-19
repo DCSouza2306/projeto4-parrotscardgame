@@ -1,0 +1,46 @@
+*{
+   box-sizing: border-box;
+}
+body{
+    background-color: #EEF9BF;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    color: #75B79E;
+    font-size: 56px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.painel-cartas{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aqua;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.carta{
+    background-color: #A7E9AF;
+    border: #99CEA8 1px solid;
+    border-radius: 5px;
+    height: 146px;
+    margin: 10px 25px;
+    width: 117px;
+
+    transition: background-color 300ms linear;
+
+}
+
+.carta:active{
+    background-color: red;
+    transform: translateY(2px)}
+
+.escondido{
+    display: none;
+}
+
+.carta img{
+    margin: 23px 8px
+}
