@@ -13,10 +13,9 @@ h1{
     text-align: center;
 }
 
-.painel-cartas{
+.painel-cartas ul{
     display: flex;
     flex-wrap: wrap;
-    background-color: aqua;
     width: 1200px;
     margin: 0 auto;
 }
@@ -29,18 +28,24 @@ h1{
     margin: 10px 25px;
     width: 117px;
 
-    transition: background-color 300ms linear;
+    transition: all 1s ;
 
 }
 
-.carta:active{
-    background-color: red;
-    transform: translateY(2px)}
+.carta-virada{
+    transform: rotatey(180deg)}
 
-.escondido{
+.oculta{
     display: none;
 }
 
-.carta img{
+.imagem-frente{
     margin: 23px 8px
+}
+
+.imagem-tras{
+    width: 100px;
+    height: 100px;
+    margin: 23px 8px;
+    transform: rotateY(180deg);
 }
