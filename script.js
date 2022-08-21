@@ -90,12 +90,23 @@ function desviraCarta() {
     painel.classList.add('oculta');
 }
 
+
+//função de comparação para embaralhar as cartas
 function comparador() {
     return Math.random() - 0.5;
 }
 
+
+//função para perguntar o número de cartas, embaralhar e gerar as cartas
 function criarCartas() {
     let qtdCartas = Number(prompt('Selecione a quantidade de cartas (escolha um número entre 4 e 14)'));
+
+    if (qtdCartas < 4 || qtdCartas > 14){
+        do {
+            alert("Você escolheu uma quantidade inválida, digite um número entre 4 e 14");
+            qtdCartas = Number(prompt('Selecione a quantidade de cartas (escolha um número entre 4 e 14)'));
+        } while (qtdCartas < 4 || qtdCartas > 14)
+    }
     if (qtdCartas % 2 !== 0) {
         do {
             alert('Digite um número par');
